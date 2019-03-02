@@ -43,3 +43,6 @@ $ git add .
 $ git commit -m "message"
 $ git push -u origin master
 
+※クローンした後でgithub上でファイルメンテするとコンフリクト発生し
+プッシュを受け付けなくなるので注意
+⇒githubでファイル編集した後に、クローンしてローカルで編集して、プッシュしてください。
