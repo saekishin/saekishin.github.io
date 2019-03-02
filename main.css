@@ -26,3 +26,21 @@ line-height: なんだっけ？
   height: 60px;
   line-height: 60px;
 }
+
+/*idの場合#を付ける*/
+#start {
+  float: left;
+}
+
+#stop {
+  float: right;
+}
+
+/*cursor:カーソルが当たった時の処理    */
+#start, #stop {
+  cursor: pointer;
+  font-size: 18px;
+  width: 145px;
+  background: #eee;
+  
+}
