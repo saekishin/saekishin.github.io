@@ -1,8 +1,9 @@
-//chromeではなぜかcssが表示されなかったが別のブラウザで（他の端末で）開くと治った:おそらくgithub.ioへ時間差で反映されるのかも
-//font-family:
-//margin: 上　横　下？
-//text-align: 後で確認する
-//font-weight:太字など
+/*
+chromeではなぜかcssが表示されなかったが別のブラウザで（他の端末で）開くと治った:おそらくgithub.ioへ時間差で反映されるのかも
+font-family:
+margin: 上　横　下？
+text-align: 後で確認する
+*/font-weight:太字など
 
 .container {
   font-family: 'Courier New', sans-serif;
@@ -12,8 +13,11 @@
   font-weight: bold;
 }
 
-//複数のタグを指定する際は、,で区切る
-//line-height: なんだっけ？
+/*
+複数のタグを指定する際は、,で区切る
+line-height: なんだっけ？
+*/
+
 #target, #result {
   font-weight: 32px;
   margin-bottom: 15px;
