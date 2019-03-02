@@ -3,7 +3,8 @@ chromeではなぜかcssが表示されなかったが別のブラウザで（�
 font-family:
 margin: 上　横　下？
 text-align: 後で確認する
-*/font-weight:太字など
+font-weight:太字など
+*/
 
 .container {
   font-family: 'Courier New', sans-serif;
