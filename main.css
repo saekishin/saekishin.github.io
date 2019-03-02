@@ -1,1 +1,14 @@
+//classの場合. idの場合#を付ける
 
+//font-family:フォント種類
+//margin: 上　横　下
+//text-align:なんだっけ
+//font-weight: 太字？
+
+.container {
+  font-family: 'Courier New', sans-serif;
+  width: 30px;
+  margin: 30px auto 0;
+  text-align: center;
+  font-weight: bold;
+}
