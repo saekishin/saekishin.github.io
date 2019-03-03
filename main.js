@@ -14,6 +14,7 @@
 //上の代数startに対し「clickした場合のイベントリスナを設定している　⇒対象オブジェクト.addEventListner(イベントの条件、function)
 start.addEventListener('click', function() {
 //ここにイベントの処理を記述する
+starTime = Date.now();
 
 });
 
