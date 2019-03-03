@@ -36,11 +36,17 @@ line-height: なんだっけ？
   float: right;
 }
 
-/*cursor:カーソルが当たった時の処理    */
+/*
+cursor:カーソルが当たった時の処理    
+height line-height で上下左右を合わせる
+box-shadow 上　下　横？
+*/
 #start, #stop {
   cursor: pointer;
   font-size: 18px;
   width: 145px;
   background: #eee;
-  
+  height: 40px;
+  line-height: 40px;  
+  box-shadow: 0 6px 0 #ccc;
 }
