@@ -49,3 +49,13 @@ $ git push -u origin master
 
 ※プッシュした後、ローカルのファイルは削除する
 
+再度やってみたので
+$ git clone URL(https://github.com/username/username.github.io.git)
+$ cd クローンしたディレクトリ
+色々ファイルメンテ
+$ git add .
+$ git commit -m "message"
+$ git remote add URL(https://github.com/username/username.github.io)
+$ git push -u origin master
+
+
