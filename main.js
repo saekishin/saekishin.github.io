@@ -19,6 +19,8 @@ start.addEventListener('click', function() {
 //時間はDate.nowでしゅとくする
   startTime = Date.now();
   this.className = 'pushed';
+  
+  stop.className = '';
 
 });
 
@@ -27,6 +29,8 @@ stop.addEventListener('click', function() {
   var elapsedTime;
   
   this.className = 'pushed';
+  
+  stop.className = '';
 //ミリ秒なので、1000で割り算する
   elapsedTime = (Date.now() - startTime) / 1000;
 
