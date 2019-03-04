@@ -11,11 +11,13 @@
   
 //クリックしたときの時間を取得するための変数
   var startTime;
+  
+  var diff;
 //上の代数startに対し「clickした場合のイベントリスナを設定している　⇒対象オブジェクト.addEventListner(イベントの条件、function)
 start.addEventListener('click', function() {
 //ここにイベントの処理を記述する
 //時間はDate.nowでしゅとくする
-  starTime = Date.now();
+  startTime = Date.now();
 
 });
 
