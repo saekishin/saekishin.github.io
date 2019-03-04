@@ -33,7 +33,9 @@ start.addEventListener('click', function() {
   this.className = 'pushed';
 //スタートをクリックしたときはstopのidを空にする
   stop.className = '';
-
+//スタートを押したとき、前回のスコアが残ると困るので、0にする
+  result.textContent = '0.000';
+  
 });
 
 stop.addEventListener('click', function() {
