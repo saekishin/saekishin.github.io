@@ -24,7 +24,7 @@ stop.addEventListener('click', function() {
   var elapsedTime;
 //ミリ秒なので、1000で割り算する
   elapsedTime = (Date.now() - startTime) / 1000;
-});
+
   
   //上で宣言した変数resultに対し、elapsedTime1を投入（toFixedで小数点～桁まで表示させる）
   result.textContent = elapsedTime.toFixed(3);
@@ -38,5 +38,7 @@ stop.addEventListener('click', function() {
     result.className = 'perfect';
     
   }
+  
+});
   
 })();
