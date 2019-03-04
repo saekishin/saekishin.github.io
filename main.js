@@ -26,9 +26,17 @@ stop.addEventListener('click', function() {
   elapsedTime = (Date.now() - startTime) / 1000
 });
   
-//上で宣言した変数resultに対し、elapsedTime1を投入（toFixedで小数点～桁まで表示させる）
+  //上で宣言した変数resultに対し、elapsedTime1を投入（toFixedで小数点～桁まで表示させる）
   result.textContent = elapsedTime.toFixed(3);
-  
-  
+//target
+  diff = elapsedTime - 5.0;
+//差が1秒以内の場合の判定を設定
+//Math.absで絶対値の表示を行う。
+//if (diff > -1 && diff <1) {
+  if (Math.abs(diff) < 1.0) {
+//オブジェクトのクラス名の操作…classNameに代入
+    result.className = 'perfect';
+    
+  }
   
 })();
