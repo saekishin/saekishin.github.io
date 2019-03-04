@@ -30,7 +30,7 @@ stop.addEventListener('click', function() {
   
   this.className = 'pushed';
   
-  stop.className = '';
+  start.className = '';
 //ミリ秒なので、1000で割り算する
   elapsedTime = (Date.now() - startTime) / 1000;
 
