@@ -11,11 +11,23 @@
   
 //クリックしたときの時間を取得するための変数
   var startTime;
+  
+//ゲームが開始されているかどうか  
+  var isStarted = false;
+  
 //目標との差を表示  
   var diff;
 //上の代数startに対し「clickした場合のイベントリスナを設定している　⇒対象オブジェクト.addEventListner(イベントの条件、function)
 start.addEventListener('click', function() {
 //ここにイベントの処理を記述する
+//ゲームが開始されているかどうかで条件分岐。
+//===でtrue false判定？？？
+//returnでそれ以降の処理に進まずに終了
+  if (isStarted === true) {
+   return;  
+  }
+  
+  var isStarted = true;
 //時間はDate.nowで取得する
   startTime = Date.now();
   this.className = 'pushed';
@@ -27,6 +39,8 @@ start.addEventListener('click', function() {
 stop.addEventListener('click', function() {
 //経過時間を取得する
   var elapsedTime;
+  
+  var isStarted = false;
   
   this.className = 'pushed';
 //ストップをクリックしたときはstartのidを空にする
