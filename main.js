@@ -1,4 +1,4 @@
-//
+
 
 (function() {
 //↓エラーチェックをするために記述しとく
@@ -11,15 +11,15 @@
   
 //クリックしたときの時間を取得するための変数
   var startTime;
-  
+//目標との差を表示  
   var diff;
 //上の代数startに対し「clickした場合のイベントリスナを設定している　⇒対象オブジェクト.addEventListner(イベントの条件、function)
 start.addEventListener('click', function() {
 //ここにイベントの処理を記述する
-//時間はDate.nowでしゅとくする
+//時間はDate.nowで取得する
   startTime = Date.now();
   this.className = 'pushed';
-  
+//スタートをクリックしたときはstopのidを空にする
   stop.className = '';
 
 });
@@ -29,7 +29,7 @@ stop.addEventListener('click', function() {
   var elapsedTime;
   
   this.className = 'pushed';
-  
+//ストップをクリックしたときはstartのidを空にする
   start.className = '';
 //ミリ秒なので、1000で割り算する
   elapsedTime = (Date.now() - startTime) / 1000;
