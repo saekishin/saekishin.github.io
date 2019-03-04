@@ -27,7 +27,7 @@ line-height: なんだっけ？
   line-height: 60px;
 }
 
-/*クラスがresultでIDがperfect */
+/*#idがresultで.classがperfect */
 #result.perfect {
   background: #FA5555;
   color: #fff;
