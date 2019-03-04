@@ -43,6 +43,7 @@ stop.addEventListener('click', function() {
   var elapsedTime;
   
 //まだゲーム開始していない場合、以下の処理を行わないようにしたい
+//if文を入れたが、stop処理が何度もできてしまう。なぜか？　returnでは処理が終了しないのか？
   if (isStarted === false) {
    return;
   }
