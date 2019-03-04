@@ -40,6 +40,11 @@ stop.addEventListener('click', function() {
 //経過時間を取得する
   var elapsedTime;
   
+//まだゲーム開始していない場合、以下の処理を行わないようにしたい
+  if (isStarted === false) {
+   return;
+  }
+  
   var isStarted = false;
   
   this.className = 'pushed';
