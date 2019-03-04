@@ -15,8 +15,7 @@
 //ゲームが開始されているかどうか  
   var isStarted = false;
   
-//目標との差を表示  
-  var diff;
+
 //上の代数startに対し「clickした場合のイベントリスナを設定している　⇒対象オブジェクト.addEventListner(イベントの条件、function)
 start.addEventListener('click', function() {
 //ここにイベントの処理を記述する
@@ -27,7 +26,8 @@ start.addEventListener('click', function() {
    return;  
   }
   
-  var isStarted = true;
+//var isStarted = true;間違えてvarをいれてしまっていた
+  isStarted = true;
 //時間はDate.nowで取得する
   startTime = Date.now();
   this.className = 'pushed';
@@ -40,15 +40,18 @@ start.addEventListener('click', function() {
 
 stop.addEventListener('click', function() {
 //経過時間を取得する
-  var elapsedTime;
+  
   
 //まだゲーム開始していない場合、以下の処理を行わないようにしたい
 //if文を入れたが、stop処理が何度もできてしまう。なぜか？　returnでは処理が終了しないのか？
-  if (isStarted === false) {
+  if (isStarted == false) {
    return;
   }
-  
-  var isStarted = false;
+  var elapsedTime;
+  //目標との差を表示  
+  var diff;
+//var isStarted = false;間違えてvarをいれていた
+  isStarted = false;
   
   this.className = 'pushed';
 //ストップをクリックしたときはstartのidを空にする
